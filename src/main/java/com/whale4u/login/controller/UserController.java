@@ -25,4 +25,9 @@ public class UserController {
     public Result login(User user) {
         return userService.login(user);
     }
+
+    @PostMapping(value = "/jwtlogin")
+    public Result JwtLogin(User user) {
+        return userService.JwtLogin(user);
+    }
 }
